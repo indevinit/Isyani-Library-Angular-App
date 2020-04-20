@@ -15,11 +15,11 @@ body {
 
     display: flex;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     opacity: 1;
 }
 
-.container > img {
+.my-container > img {
     position: absolute;
     left: 0;
     top: 0;
