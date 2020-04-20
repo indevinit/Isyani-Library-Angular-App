@@ -1,0 +1,20 @@
+<div class="container" fxLayout="column" fxLayoutGap="10px">
+  <div fxFlex>
+    <div>
+      <h3>Catalogue</h3>
+      <hr />
+    </div>
+  </div>
+
+  <div fxFlex>
+    <mat-grid-list cols="2" rowHeight="200px" fxLayoutGap="5000px">
+      <mat-grid-tile *ngFor="let book of books">
+        <img height="300px" src="{{ book.imageLink }}" alt="{{ book.title }}" />
+        <mat-grid-tile-footer>
+          <h1 mat-line>{{ book.title }}</h1>
+          <p mat-line>written by: {{ book.author }}</p>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
