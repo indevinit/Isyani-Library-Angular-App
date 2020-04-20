@@ -7,28 +7,6 @@ import { Book } from '../shared/book';
 })
 export class CatalogueComponent implements OnInit {
   books: Book[] = [
-    // {
-    //   id: '0',
-    //   name: 'Uthappizza',
-    //   image: '/assets/images/uthappizza.png',
-    //   category: 'mains',
-    //   featured: true,
-    //   label: 'Hot',
-    //   price: '4.99',
-    //   // tslint:disable-next-line:max-line-length
-    //   description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.'
-    // },
-    // {
-    //   id: '1',
-    //   name: 'Zucchipakoda',
-    //   image: '/assets/images/zucchipakoda.png',
-    //   category: 'appetizer',
-    //   featured: false,
-    //   label: '',
-    //   price: '1.99',
-    //   description: 'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce'
-    // },
-
 
     {
       id: '1',

@@ -1,15 +1,27 @@
-<div class="container" fxLayout="column" fxLayoutGap="10px">
-  <div fxFlex>
+<div class="container" fxLayout="column">
+  <img src="../assets/images/library3.jpeg" />
+  <div fxFlex class="my-container">
     <div>
       <h3>Catalogue</h3>
       <hr />
     </div>
   </div>
-
+  <!-- <div class="bg"> -->
   <div fxFlex>
-    <mat-grid-list cols="2" rowHeight="200px" fxLayoutGap="5000px">
+    <!-- <mat-grid-list cols="2" rowHeight="200px" fxLayoutGap="5000px"> -->
+    <mat-grid-list
+      cols="2"
+      rowHeight="2:1"
+      [gutterSize]="'40px'"
+      fxLayoutGap="100px"
+    >
       <mat-grid-tile *ngFor="let book of books">
-        <img height="300px" src="{{ book.imageLink }}" alt="{{ book.title }}" />
+        <img
+          height="300px"
+          width="300px"
+          src="{{ book.imageLink }}"
+          alt="{{ book.title }}"
+        />
         <mat-grid-tile-footer>
           <h1 mat-line>{{ book.title }}</h1>
           <p mat-line>written by: {{ book.author }}</p>
