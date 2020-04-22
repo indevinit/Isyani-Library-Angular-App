@@ -1,3 +1,5 @@
+import { Review } from './review';
+
 export class Book {
     id: string;
     author: string;
@@ -8,4 +10,5 @@ export class Book {
     pages: number;
     title: string;
     year: number;
+    reviews: Review[];
 }
