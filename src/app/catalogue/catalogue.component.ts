@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../shared/book';
 import { BOOKS } from '../shared/books';
-
+import { BookService } from '../services/book.service';
 
 @Component({
   selector: 'app-catalogue',
@@ -15,16 +15,23 @@ export class CatalogueComponent implements OnInit {
   // books = BOOKS;
   // selectedBook = BOOKS[0];
 
-  books: Book[] = BOOKS;
+  // books: Book[] = BOOKS;
+  // selectedBook: Book;
+
+  books: Book[];
+
   selectedBook: Book;
+
+
 
   onSelect(book: Book) {
     this.selectedBook = book;
   }
 
-  constructor() { }
+  constructor(private bookService: BookService) { }
 
   ngOnInit() {
+    this.books = this.bookService.getBooks();
   }
 
 }
