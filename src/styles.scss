@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/deeppurple-amber.css"; */
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+@import "variables";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: white;
+  background-color: lightgray;
+}
+.title {
+  z-index: 2;
+  position: relative;
+  padding-bottom: 0.5em;
+}
+.container {
+  margin: 1em;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.background > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.a-tag {
+  color: orange;
+}
