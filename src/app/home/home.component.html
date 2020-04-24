@@ -1,3 +1,61 @@
-<p>
-  home works!
-</p>
+<!-- HOME WORKS -->
+<!-- <app-catalogue></app-catalogue> -->\
+
+<div class="container"
+    fxLayout="row"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px">
+
+    <mat-card *ngIf="book" fxFlex>
+        <mat-card-header>
+            <div mat-card-avatar></div>
+            <mat-card-title>
+                <h2 mat-button routerLink="/catalogue"><a
+                        class="a-tag-clickable"><u>CATALOGUE</u></a></h2>
+
+
+                <!-- <h3>{{book.title | titlecase }}</h3> -->
+                <h3>
+                    <a class="a-tag-clickable"
+                        href={{book.imageLink}}>{{book.title | titlecase }}</a></h3>
+            </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src={{book.imageLink}} alt={{book.title}}>
+        <mat-card-content>
+            <p>{{book.author}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card *ngIf="promotion" fxFlex>
+        <mat-card-header>
+            <div mat-card-avatar></div>
+            <mat-card-title>
+                <h2><u><a
+                            class="a-tag-clickable">BOOK OF THE MONTH</a></u></h2>
+                <h3>
+                    <a class="a-tag-clickable"
+                        href={{promotion.link}}>{{promotion.title
+                        |titlecase}}</a></h3>
+            </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src={{promotion.imageLink}} alt={{promotion.title}}>
+        <mat-card-content>
+            <p>Title: {{promotion.title}}
+            </p>
+            <p>Author: {{promotion.author}}
+            </p>
+            <p>Country: {{promotion.country}}
+            </p>
+            <p>Language: {{promotion.language}}
+            </p>
+            <p>Number of Pages: {{promotion.pages}}
+            </p>
+            <p>Published Year: {{promotion.year}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+</div>

@@ -1,6 +1,6 @@
 import { Review } from './review';
 
-export class Book {
+export class Promotion {
     id: string;
     author: string;
     country: string;

@@ -2,7 +2,11 @@
   <div>
     <h2 class="title">Catalogue</h2>
     <hr />
+    <mat-card-actions>
+      <button routerLink="/home" mat-button class="back-button">BACK</button>
+    </mat-card-actions>
   </div>
+
   <div fxFlex class="background">
     <img src="../assets/images/library3.jpeg" />
   </div>
@@ -13,15 +17,14 @@
       cols="2"
       rowHeight="2:1"
       [gutterSize]="'40px'"
-      fxLayoutGap="100px"
-    >
+      fxLayoutGap="100px">
       <mat-grid-tile *ngFor="let book of books" (click)="onSelect(book)">
         <img
           height="300px"
           width="300px"
           src="{{ book.imageLink }}"
           alt="{{ book.title }}"
-        />
+          />
         <mat-grid-tile-footer>
           <h1 mat-line>{{ book.title }}</h1>
           <p mat-line>written by: {{ book.author }}</p>

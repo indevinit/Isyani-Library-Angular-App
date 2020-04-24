@@ -15,12 +15,13 @@ import { MatListModule } from '@angular/material/list';
 import { BookDetailComponent } from './bookdetail/bookdetail.component';
 
 import { BookService } from './services/book.service';
+import { PromotionService } from './services/promotion.service';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { AppRoutingModule } from './app-routing/app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,10 +43,14 @@ import { ContactComponent } from './contact/contact.component';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    AppRoutingModule
 
   ],
-  providers: [BookService],
+  providers: [
+    BookService,
+    PromotionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
