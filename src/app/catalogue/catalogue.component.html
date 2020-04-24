@@ -11,14 +11,16 @@
     <img src="../assets/images/library3.jpeg" />
   </div>
   <!-- <div class="bg"> -->
-  <div fxFlex>
+  <div class="hover" fxFlex>
     <!-- <mat-grid-list cols="2" rowHeight="200px" fxLayoutGap="5000px"> -->
     <mat-grid-list
       cols="2"
       rowHeight="2:1"
       [gutterSize]="'40px'"
       fxLayoutGap="100px">
-      <mat-grid-tile *ngFor="let book of books" (click)="onSelect(book)">
+
+      <mat-grid-tile class="hover" *ngFor="let book of books"
+        (click)="onSelect(book)">
         <img
           height="300px"
           width="300px"

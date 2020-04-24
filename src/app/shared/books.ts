@@ -14,14 +14,14 @@ export const BOOKS: Book[] = [
         "featured": true,
         "reviews": [
             {
-                rating: 3,
-                comment: 'It is an OK book',
+                rating: 4,
+                comment: 'My favorite classic',
                 author: 'John Doe',
                 date: '2019-10-16T17:57:28.556094Z'
             },
             {
-                rating: 4,
-                comment: 'An interesting book',
+                rating: 5,
+                comment: 'What an interesting book!',
                 author: 'Xavier Douglas',
                 date: '2018-09-05T17:57:28.556094Z'
             },
@@ -130,7 +130,7 @@ export const BOOKS: Book[] = [
             },
             {
                 rating: 1,
-                comment: 'Worst book ever',
+                comment: 'Not my favorite book',
                 author: 'Rex Tiger',
                 date: '2019-11-05T17:57:28.556094Z'
             },
