@@ -18,6 +18,8 @@ import { BookService } from './services/book.service';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     BookDetailComponent,
     HeaderComponent,
     FooterComponent,
+    HomeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

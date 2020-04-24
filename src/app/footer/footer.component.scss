@@ -1,39 +1,23 @@
-$lt-gray: #ddd;
-$background-dark: #512da8;
-$background-light: #9575cd;
-$background-pale: #d1c4e9;
-
-@mixin zero-margin($pad-up-down, $pad-left-right) {
-    margin: 0px auto;
-    padding: $pad-up-down $pad-left-right;
-}
-
 .footer {
-    background-color: $background-pale;
-    @include zero-margin(20px, 0px);
+  color: hotpink;
+  //   width: 40em;
+  height: 13em;
+  //   width: 100%;
+  background-color: lightgray !important;
+  z-index: 2;
+  position: relative;
+  //   opacity: 1 !important;
+  text-align: center;
+  //   padding-left: 20em;
+  padding: 1.5em;
+  display: block;
+  margin-left: 10em;
+
+  //   margin-right: 3em;
 }
 
-.btn-facebook {
-    color: #fff !important;
-    background-color: #3b5998 !important;
-}
-.btn-google-plus {
-    color: #fff !important;
-    background-color: #dd4b39 !important;
-}
-.btn-youtube {
-    color: #fff !important;
-    background-color: #ff4b39 !important;
-}
-.btn-linkedin {
-    color: #fff !important;
-    background-color: #007bb6 !important;
-}
-.btn-twitter {
-    color: #fff !important;
-    background-color: #55acee !important;
-}
-.btn-mail {
-    color: #fff !important;
-    background-color: #512da8 !important;
+.footer-title {
+  text-decoration: underline;
+  font-size: 16pt;
+  font-weight: bold;
 }
